@@ -19,4 +19,7 @@ async function getsongs(){
     return songs;
 }
 
-main();
+async function main(){
+    let songs = await getsongs();
+    console.log(songs)
+}

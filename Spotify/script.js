@@ -38,21 +38,21 @@ async function main() {
         }
         console.log(songs);
 
+        //show all the songs in the playlist
         let songUl = document.querySelector(".songlist").getElementsByTagName("ul")[0];
         for (const song of songs) {
-            songUl.innerHTML = songUl.innerHTML + `<li>${song}</li>`;
+            songUl.innerHTML += `<li>
+                <img class="invert" src="music.svg" alt="">
+                <div class="info">
+                    <div>${song}</div>
+                    <div>Harihar</div>
+                </div>
+                <div class="playnow">
+                    <span>Play now</span>
+                    <img class="invert" src="play.svg" alt="">
+                </div>
+            </li>`;
         }
-        
-        var audio = new Audio(songs[0]);
-        // await audio.play();
-
-        audio.addEventListener("loadeddata", () => {
-            console.log('Audio loaded:', audio.duration, audio.currentSrc, audio.currentTime);
-        });
-
-        audio.addEventListener("error", (event) => {
-            console.error('Error playing audio:', event);
-        });
     } catch (error) {
         console.error('Error in main:', error);
     }

@@ -33,34 +33,24 @@ p-1{
     padding: 10px;
 }
 
-/* Style the scrollbar track */
-::-webkit-scrollbar-track {
-    background-color: #333; /* Dark background color */
+.right {
+    /* Your existing styles */
+    overflow-y: auto; /* Enable vertical scrollbar */
 }
 
-/* Style the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-    background-color: #666; /* Darker color for the thumb */
-}
-
-/* Style the scrollbar track on Firefox */
-/* You may need to adjust these styles for other browsers */
-::-moz-scrollbar {
-    background-color: #333; /* Dark background color */
-}
-
-/* Style the scrollbar thumb on Firefox */
-::-moz-scrollbar-thumb {
-    background-color: #666; /* Darker color for the thumb */
-}
-
-/* Optional: Style other scrollbar properties */
-/* For example, you can style the scrollbar width, corner, etc. */
-::-webkit-scrollbar {
+.right::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
 }
 
-/* Optional: Style scrollbar corner */
-::-webkit-scrollbar-corner {
-    background-color: #333; /* Dark background color */
+.right::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+.right::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.right::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
 }

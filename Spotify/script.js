@@ -28,7 +28,13 @@ async function getSongs() {
     }
 }
 
+const playMusic = (track)=>{
+    let audio = new Audio("/songs/" + track)
+    audio.play()
+}
 async function main() {
+
+    let currentsong;
     try {
         // Get list of all songs
         let songs = await getSongs();
@@ -56,6 +62,13 @@ async function main() {
     } catch (error) {
         console.error('Error in main:', error);
     }
+    // attach an eventlistner to each songs
+    Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=>{
+        e.addEventListener("click",element=>{
+            console.log(e.querySelector(".info").firstElementChild.innerHTML)
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
+        })
+    })
 }
 
 main();

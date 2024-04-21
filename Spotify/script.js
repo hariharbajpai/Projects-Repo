@@ -1,5 +1,6 @@
 console.log("Let's go");
 
+let currentsong = new Audio();
 async function getSongs() {
     try {
         let response = await fetch("http://127.0.0.1:5500/github/Projects-Repo/Spotify/songs/");
@@ -29,12 +30,13 @@ async function getSongs() {
 }
 
 const playMusic = (track)=>{
-    let audio = new Audio("/songs/" + track)
-    audio.play()
+    currentsong.src = "/songs/" + track;
+    currentsong.play();
 }
+
 async function main() {
 
-    let currentsong;
+   
     try {
         // Get list of all songs
         let songs = await getSongs();
@@ -68,6 +70,19 @@ async function main() {
             console.log(e.querySelector(".info").firstElementChild.innerHTML)
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
         })
+    })
+
+    // attach event listner to play next and previous
+    let Play = e.querySelector(".playnow img");
+    play.addEventListener(click, ()=>{
+        if(currentsong.paused){
+            currentsong.play()
+            play.src = "pause.svg"
+        }
+        else{
+            currentsong.pause();
+            play.src = "play.svg"
+        }
     })
 }
 

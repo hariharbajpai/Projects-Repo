@@ -35,8 +35,6 @@ const playMusic = (track)=>{
 }
 
 async function main() {
-
-   
     try {
         // Get list of all songs
         let songs = await getSongs();
@@ -46,10 +44,12 @@ async function main() {
         }
         console.log(songs);
 
-        //show all the songs in the playlist
+        // Show all the songs in the playlist
         let songUl = document.querySelector(".songlist").getElementsByTagName("ul")[0];
         for (const song of songs) {
-            songUl.innerHTML += `<li>
+            // Create list item for each song
+            let li = document.createElement("li");
+            li.innerHTML = `
                 <img class="invert" src="music.svg" alt="">
                 <div class="info">
                     <div>${song}</div>
@@ -59,31 +59,28 @@ async function main() {
                     <span>Play now</span>
                     <img class="invert" src="play.svg" alt="">
                 </div>
-            </li>`;
+            `;
+            // Attach event listener to each song
+            li.addEventListener("click", () => {
+                playMusic(song.trim());
+            });
+            songUl.appendChild(li);
         }
     } catch (error) {
         console.error('Error in main:', error);
     }
-    // attach an eventlistner to each songs
-    Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=>{
-        e.addEventListener("click",element=>{
-            console.log(e.querySelector(".info").firstElementChild.innerHTML)
-            playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
-        })
-    })
 
-    // attach event listner to play next and previous
-    let Play = e.querySelector(".playnow img");
-    play.addEventListener(click, ()=>{
-        if(currentsong.paused){
-            currentsong.play()
-            play.src = "pause.svg"
-        }
-        else{
+    // Attach event listener to play/pause button
+    let play = document.querySelector(".playnow img");
+    play.addEventListener("click", () => {
+        if (currentsong.paused) {
+            currentsong.play();
+            play.src = "pause.svg";
+        } else {
             currentsong.pause();
-            play.src = "play.svg"
+            play.src = "play.svg";
         }
-    })
+    });
 }
 
 main();

@@ -1,24 +1,7 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+ 
 
 :root {
 
-    /**
-     * colors
-     */
 
     --chinese-violet_30: hsla(304, 14%, 46%, 0.3);
     --chinese-violet: hsl(304, 14%, 46%);
@@ -31,10 +14,6 @@
     --seashell: hsl(20, 43%, 93%);
     --charcoal: hsl(203, 30%, 26%);
     --white: hsl(0, 0%, 100%);
-
-    /**
-     * typography
-     */
 
     --ff-philosopher: 'Philosopher', sans-serif;
     --ff-poppins: 'Poppins', sans-serif;
@@ -50,37 +29,24 @@
     --fw-500: 500;
     --fw-700: 700;
 
-    /**
-     * spacing
-     */
-
     --section-padding: 80px;
 
-    /**
-     * shadow
-     */
-
+ 
     --shadow-1: 4px 6px 10px hsla(231, 94%, 7%, 0.06);
     --shadow-2: 2px 0 15px 5px hsla(231, 94%, 7%, 0.06);
     --shadow-3: 3px 3px var(--chinese-violet);
     --shadow-4: 5px 5px var(--chinese-violet);
 
-    /**
-     * radius
-     */
+ 
 
     --radius-5: 5px;
     --radius-10: 10px;
 
-    /**
-     * clip path
-     */
+  
 
     --polygon: polygon(100% 29%, 100% 100%, 19% 99%, 0 56%);
 
-    /**
-     * transition
-     */
+ 
 
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
@@ -91,10 +57,7 @@
 
 
 
-
-/*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
+ 
 
 *,
 *::before,
@@ -195,10 +158,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
-
+ 
 .container {
     padding-inline: 15px;
 }
@@ -344,9 +304,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #HEADER
-  \*-----------------------------------*/
+ 
 
 .header {
     background-color: var(--white);
@@ -450,9 +408,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #HERO
-  \*-----------------------------------*/
+ 
 
 .hero {
     padding-block-start: calc(var(--section-padding) + 60px);
@@ -522,10 +478,7 @@ body {
 
 
 
-
-/*-----------------------------------*\
-    #BENEFITS
-  \*-----------------------------------*/
+ 
 
 .benefits .section-text {
     text-align: center;
@@ -599,9 +552,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #CHAPTERS
-  \*-----------------------------------*/
+ 
 
 .chapter-card {
     height: 100%;
@@ -624,9 +575,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #PREVIEW
-  \*-----------------------------------*/
+ 
 
 .tab-list {
     display: flex;
@@ -677,10 +626,7 @@ body {
 
 
 
-
-/*-----------------------------------*\
-    #PRICING
-  \*-----------------------------------*/
+ 
 
 .pricing-card {
     padding: 40px 50px;
@@ -726,9 +672,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #AUTHOR
-  \*-----------------------------------*/
+ 
 
 .author {
     background-color: var(--seashell);
@@ -761,10 +705,7 @@ body {
 
 
 
-/*-----------------------------------*\
-    #ACHIEVEMENT
-  \*-----------------------------------*/
-
+ 
 .section.achievement {
     background-color: var(--white);
 }
@@ -795,10 +736,7 @@ body {
 
 
 
-
-/*-----------------------------------*\
-    #CONTACT
-  \*-----------------------------------*/
+ 
 
 .contact .wrapper {
     display: grid;
@@ -886,9 +824,7 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
+ 
 
 .footer {
     background-color: var(--seashell);
@@ -928,25 +864,16 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
-    #MEDIA QUERIES
-  \*-----------------------------------*/
-
-/**
-   * responsive for large than 575px screen
-   */
+ 
+ 
 
 @media (min-width: 575px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
+   
 
     :root {
 
-        /**
-       * typography
-       */
+    
 
         --fs-2: 4.5rem;
         --fs-3: 3.5rem;
@@ -956,10 +883,7 @@ textarea.input-field {
 
 
 
-    /**
-     * REUSED STYLE
-     */
-
+ 
     .container,
     .header,
     .navbar {
@@ -973,11 +897,7 @@ textarea.input-field {
     }
 
 
-
-    /**
-     * HEADER
-     */
-
+ 
     .header {
         top: 30px;
     }
@@ -993,9 +913,7 @@ textarea.input-field {
 
 
 
-    /**
-     * PREVIEW
-     */
+   
 
     .tab-card.active {
         height: 50vh;
@@ -1003,9 +921,7 @@ textarea.input-field {
 
 
 
-    /**
-     * ACHIEVEMENT
-     */
+  
 
     .achievement-card {
         display: flex;
@@ -1024,10 +940,7 @@ textarea.input-field {
     }
 
 
-
-    /**
-     * CONTACT
-     */
+ 
 
     .social-list-title {
         --fs-6: 2.2rem;
@@ -1044,21 +957,13 @@ textarea.input-field {
 
 
 
-/**
-   * responsive for large than 768px screen
-   */
-
+ 
 @media (min-width: 768px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
-
+    
     :root {
 
-        /**
-       * typography
-       */
+    
 
         --fs-2: 4.8rem;
 
@@ -1066,9 +971,7 @@ textarea.input-field {
 
 
 
-    /**
-     * REUSED STYLE
-     */
+  
 
     .container,
     .header,
@@ -1081,10 +984,7 @@ textarea.input-field {
     }
 
 
-
-    /**
-     * HERO
-     */
+ 
 
     .hero {
         padding-block-start: calc(var(--section-padding) + 100px);
@@ -1102,9 +1002,7 @@ textarea.input-field {
 
 
 
-    /**
-     * BENEFITS
-     */
+  
 
     .benefits :is(.section-title, .section-text) {
         text-align: left;
@@ -1116,9 +1014,7 @@ textarea.input-field {
 
 
 
-    /**
-     * CHAPTERS, PRICING
-     */
+    
 
     :is(.chapters, .pricing) .grid-list li:last-child {
         grid-column: 1 / 3;
@@ -1129,9 +1025,7 @@ textarea.input-field {
 
 
 
-    /**
-     * PREVIEW
-     */
+   
 
     .tab-card.active {
         height: 70vh;
@@ -1139,9 +1033,7 @@ textarea.input-field {
 
 
 
-    /**
-     * AUTHOR
-     */
+  
 
     .author .h2 {
         --fs-3: 4.2rem;
@@ -1149,9 +1041,7 @@ textarea.input-field {
 
 
 
-    /**
-     * ACHIEVEMENT
-     */
+    
 
     .achievement-card {
         flex-direction: column;
@@ -1163,9 +1053,7 @@ textarea.input-field {
 
 
 
-    /**
-     * CONTACT
-     */
+    
 
     .contact .wrapper {
         grid-template-columns: 1fr 1fr;
@@ -1177,21 +1065,15 @@ textarea.input-field {
 
 
 
-/**
-   * responsive for large than 992px screen
-   */
+ 
 
 @media (min-width: 992px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
+    
 
     :root {
 
-        /**
-       * typography
-       */
+      
 
         --fs-2: 5.4rem;
         --fs-3: 4rem;
@@ -1200,9 +1082,7 @@ textarea.input-field {
 
 
 
-    /**
-     * REUSED STYLE
-     */
+   
 
     .container,
     .header,
@@ -1216,9 +1096,7 @@ textarea.input-field {
 
 
 
-    /**
-     * HEADER
-     */
+    
 
     .header .container {
         padding-inline: 20px 30px;
@@ -1241,9 +1119,7 @@ textarea.input-field {
 
 
 
-    /**
-     * BENEFITS
-     */
+   
 
     .benefits .grid-list {
         grid-template-columns: repeat(4, 1fr);
@@ -1255,10 +1131,7 @@ textarea.input-field {
     }
 
 
-
-    /**
-     * CHAPTER, PRICING
-     */
+ 
 
     :is(.chapters, .pricing) .grid-list li:last-child {
         all: unset;
@@ -1266,9 +1139,7 @@ textarea.input-field {
 
 
 
-    /**
-     * PREVIEW
-     */
+    
 
     .tab-list {
         flex-direction: row;
@@ -1292,9 +1163,7 @@ textarea.input-field {
 
 
 
-    /**
-     * AUTHOR
-     */
+   
 
     .author .container {
         grid-template-columns: 0.6fr 1fr;
@@ -1309,9 +1178,7 @@ textarea.input-field {
 
 
 
-    /**
-     * ACHIEVEMENT
-     */
+   
 
     .achievement .grid-list {
         grid-template-columns: 1fr 1fr;
@@ -1326,10 +1193,7 @@ textarea.input-field {
     }
 
 
-
-    /**
-     * CONTACT
-     */
+ 
 
     .contact .wrapper {
         grid-template-columns: 1fr 0.5fr;
@@ -1345,21 +1209,14 @@ textarea.input-field {
 
 
 
-/**
-   * responsive for large than 1200px screen
-   */
+ 
 
 @media (min-width: 1200px) {
-
-    /**
-     * CUSTOM PROPERTY
-     */
+ 
 
     :root {
 
-        /**
-       * typography
-       */
+       
 
         --fs-2: 6rem;
         --fs-3: 4.5rem;
@@ -1370,9 +1227,7 @@ textarea.input-field {
 
 
 
-    /**
-     * REUSED STYLE
-     */
+    
 
     .container,
     .header,
@@ -1382,9 +1237,7 @@ textarea.input-field {
 
 
 
-    /**
-     * PREVIEW
-     */
+ 
 
     .tab-card {
         max-width: 75px;
@@ -1396,9 +1249,7 @@ textarea.input-field {
 
 
 
-    /**
-     * AUTHOR
-     */
+     
 
     .author-content {
         padding: 85px 60px 115px;
@@ -1406,9 +1257,7 @@ textarea.input-field {
 
 
 
-    /**
-     * FOOTER
-     */
+   
 
     .footer-top {
         display: flex;

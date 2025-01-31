@@ -1,12 +1,13 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
   box-sizing: border-box;
 }
 
 body {
+  font-family: Arial, sans-serif;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -52,7 +53,6 @@ h1, h2, p {
   opacity: 0.7;
 }
 
-
 .navbar .logo {
   color: white;
   font-size: 24px;
@@ -86,7 +86,7 @@ h1, h2, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('cricket-bg.jpg') no-repeat center center/cover;
+  background: url('GICPL\ home\ page.png') no-repeat center center/cover;
   color: white;
   text-align: center;
 }
@@ -105,10 +105,10 @@ h1, h2, p {
   padding: 10px 20px;
   font-size: 18px;
   background-color: #ffcc00;
-  border: 1px solid black; /* Corrected typo: 1x to 1px */
+  border: 1px solid black;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border-radius: 25px; /* Add rounded corners */
+  border-radius: 25px;
 }
 
 .register-btn:hover {
@@ -194,27 +194,29 @@ h1, h2, p {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .history-buttons {
   display: flex;
-  gap: 15px;  
-  justify-content: center;  
-  margin-top: 20px;  
-  flex-wrap: wrap;  
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .history-button {
-  background-color: #007BFF; 
-  color: white;  
-  padding: 10px 20px;  
-  text-decoration: none;  
-  border-radius: 5px;  
-  font-size: 16px;  
-  transition: background-color 0.3s ease;  
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .history-button:hover {
-  background-color: #0056b3;  
+  background-color: #0056b3;
 }
+
 /* Our Team Section Styling */
 .ourteam-section {
   padding: 40px 20px;

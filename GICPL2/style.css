@@ -6,6 +6,14 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, p {
+  font-family: 'Oswald', sans-serif;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -16,6 +24,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  height: 7vh;
 }
 
 .logo img {
@@ -64,7 +73,7 @@ body {
 .navbar .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .navbar .nav-links a:hover {
@@ -96,9 +105,10 @@ body {
   padding: 10px 20px;
   font-size: 18px;
   background-color: #ffcc00;
-  border: none;
+  border: 1px solid black; /* Corrected typo: 1x to 1px */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 25px; /* Add rounded corners */
 }
 
 .register-btn:hover {
@@ -121,7 +131,7 @@ body {
 }
 
 .Maincard p {
-  color: #333;
+  color: #eedfdf;
 }
 
 .Maincard {
@@ -139,6 +149,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  opacity: 0.8;
 }
 
 .Maincard:hover {
@@ -182,6 +193,76 @@ body {
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto;
+}
+.history-buttons {
+  display: flex;
+  gap: 15px;  
+  justify-content: center;  
+  margin-top: 20px;  
+  flex-wrap: wrap;  
+}
+
+.history-button {
+  background-color: #007BFF; 
+  color: white;  
+  padding: 10px 20px;  
+  text-decoration: none;  
+  border-radius: 5px;  
+  font-size: 16px;  
+  transition: background-color 0.3s ease;  
+}
+
+.history-button:hover {
+  background-color: #0056b3;  
+}
+/* Our Team Section Styling */
+.ourteam-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.forefathers, .content-team {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-card h3 {
+  font-size: 20px;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #555;
 }
 
 /* Contact Section */

@@ -115,6 +115,69 @@ h1, h2, p {
   background-color: #e6b800;
 }
 
+/* Announcement Section */
+.announcement-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.announcement-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.announcement-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Announcement Card */
+.announcement-card {
+  background-color: #fff;
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-card h3 {
+  font-size: 24px;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.announcement-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Announcement Button */
+.announcement-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.announcement-btn:hover {
+  background-color: #0056b3;
+}
 /* Cards Section */
 .cards-section {
   display: flex;

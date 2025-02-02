@@ -117,67 +117,84 @@ h1, h2, p {
 
 /* Announcement Section */
 .announcement-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  padding: 80px 10%;
+  background: #081b29;
   text-align: center;
 }
 
 .announcement-section h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 40px;
-  color: #333;
+  color: #0ef;
 }
 
 .announcement-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-/* Announcement Card */
 .announcement-card {
-  background-color: #fff;
-  border: 2px solid #007BFF;
-  border-radius: 10px;
+  background: #051129;
   padding: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .announcement-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
 }
 
 .announcement-card h3 {
   font-size: 24px;
-  color: #007BFF;
   margin-bottom: 15px;
+  color: #0ef;
 }
 
 .announcement-card p {
   font-size: 16px;
-  color: #555;
+  color: #ededed;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-/* Announcement Button */
 .announcement-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
+  background: #0ef;
   border-radius: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .announcement-btn:hover {
-  background-color: #0056b3;
+  background: #00ccff;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.6);
 }
+
+.notice-pdf-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  transition: 0.5s ease;
+}
+
+.notice-pdf-btn:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
 /* Cards Section */
 .cards-section {
   display: flex;

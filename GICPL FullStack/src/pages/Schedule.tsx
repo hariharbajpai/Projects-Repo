@@ -1,0 +1,12 @@
+import React from 'react';
+
+const Schedule = () => {
+  return (
+    <div className="min-h-screen py-16">
+      <h1>Schedule Page</h1>
+      {/* Content will be added in the next iteration */}
+    </div>
+  );
+};
+
+export default Schedule;

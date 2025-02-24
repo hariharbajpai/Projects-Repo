@@ -1,18 +1,12 @@
 {
-    "files": [],
-    "references": [
-      {
-        "path": "./jsconfig.app.json"
-      },
-      {
-        "path": "./jsconfig.node.json"
-      }
-    ],
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./src/*"]
-      }
-    }
-  }
-  
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src", "index.html", "vite.config.js"]
+}

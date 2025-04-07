@@ -1,15 +1,18 @@
 import React from 'react'
 import Navbar from './shared/navbar'
 import HeroSection from './HeroSection'
+import CategoryCarousel from './CategoryCarousel'
+import LatestJobs from './LatestJobs'
+import Footer from './shared/Footer'  // Changed from './shared/Footer'
 
 const Home = () => {
   return (
     <div>
       <Navbar/>
       <HeroSection/>
-      {/* <CategoryCarousel/>
+      <CategoryCarousel/>
       <LatestJobs/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { Avatar, AvatarImage } from '../ui/avatar';
 import { User2, LogOut, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-    const user = false; // This should be dynamically set based on authentication state
+    const user = true; // This should be dynamically set based on authentication state
     const [isOpen, setIsOpen] = React.useState(false);
 
     const toggleMenu = () => {
@@ -98,9 +98,9 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                     <div className='mt-4 flex flex-col gap-2 m-2'>
-                                        <Button variant="link" className='p-0 justify-start gap-2 text-gray-300 hover:text-white'>
+                                        <Button variant="link"  className='p-0 justify-start gap-2 text-gray-300 hover:text-white'>
                                             <User2 className='h-4 w-4' />
-                                            View profile
+                                            <Link to="/profile">View profile</Link>
                                         </Button>
                                         <Button variant="link" className='p-0 justify-start text-red-500 hover:text-red-600 gap-2'>
                                             <LogOut className='h-4 w-4' />

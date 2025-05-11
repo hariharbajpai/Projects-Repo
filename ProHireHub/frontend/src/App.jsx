@@ -6,6 +6,8 @@ import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';  
 import Home from './components/Home'; 
 import Jobs from './components/Jobs'
+import Browse from './components/Browse'; 
+import Profile from './components/Profile'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +29,16 @@ function App() {
       path: "/jobs",
       element: <Jobs />
     },
+    {
+      path: "/browse",
+      element: <Browse />
+    },
+    {
+      path: "/profile",
+      element: <Profile />
+    }
   ]);
+  
 
   return (
     <>

@@ -6,7 +6,7 @@ A full-stack web application built using the MERN stack to manage player auction
 
 ## 🚀 Live Demo
 
-[🔗 Visit GICPL Website]((https://www.gicplcricket.shop/))
+[🔗 Visit GICPL Website](https://www.gicplcricket.shop/)
 
 ---
 ## THE MAIN GITHUB REPO OF THE WEBSITE IS PRIVATE SINCE IT CONSIST FOR CONFIDENTIAL DATA
